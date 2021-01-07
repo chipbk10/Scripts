@@ -6,7 +6,7 @@ pdfunite in_1.pdf in_2.pdf in_3.pdf out.pdf
 ```
 ### SSH key
 ```
-ssh-keygen -t [algorithm] -b [fileSize] # generate ssh private & public keys
+ssh-keygen -t [algorithm] -b [fileSize] `generate ssh private & public keys`
 ssh-keygen -t rsa -b 4096
 pbcopy < ~/.ssh/id_rsa.pub # copy ssh public key
 
