@@ -21,4 +21,7 @@ rvm install ruby-3.0.0
 source /Users/linhpham/.rvm/scripts/rvm     # activate rvm
 rvm docs generate-ri                        # install ruby documents
 ```
-
+### CocoaPods:
+```
+sudo gem install cocoapods
+```
