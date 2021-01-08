@@ -40,6 +40,6 @@ brew cleanup --prune-prefix       # remove all broken links
 ```
 sudo npm install[i] -g package    # install a package globally
 sudo npm uninstall[i] -g package  # uninstall a package globally
-npm list -g --depth=0             # list all installed packages
+npm list                          # list all installed packages
 npm root -g                       # shows the directory the global modules are installed in
 ```
