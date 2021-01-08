@@ -1,0 +1,5 @@
+### Upgrade
+
+```
+brew upgrade vim
+```
