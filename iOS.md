@@ -1,6 +1,14 @@
 ### CocoaPods:
 ```
+# how to completely remove cocoapods:
+sudo gem uninstall cocoapods
+sudo gem uninstall cocoapods-core
+sudo gem uninstall cocoapods-downloader
+
+# install
 sudo gem install cocoapods
+
+# run
 pod init
 pod install
 pod update
