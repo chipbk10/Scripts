@@ -1,13 +1,21 @@
 ### Using ReactNative
 ```
 npx react-native init project
-npx react-native run-ios
-npx react-native run-android
-npx react-native install-ios
+
 npm install library [--save]
-npx pod-install
 npm list                              # list all dependencies of project
 npm start                             # run a node project
+
+npx react-native run-ios
+npx react-native install-ios
+npx pod-install
+
+npx react-native start --reset-cache  # Reset metro bundler cache
+cd android && ./gradlew clean         # Remove Android assets cache
+npx react-native run-android
+touch local.properties
+# add in local.properties: 
+# sdk.dir = /Users/chipbk10/Library/Android/sdk
 ```
 
 
