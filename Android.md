@@ -1,4 +1,4 @@
-# Android Studio
+### Android Studio
 ```
 # open from terminal
 # add to ~/.bash_profile
