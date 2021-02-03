@@ -11,6 +11,7 @@ sudo gem install cocoapods
 # run
 pod init
 pod install
+pod install --repo-update                                 # to be sure you get the latest version
 pod update
 open project.xcworkspace
 ```
