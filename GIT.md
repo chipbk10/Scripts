@@ -52,6 +52,9 @@ git branch -av
 git checkout -b branch_name remote_name/branch_name
 git checkout -b master origin/master
 
+# rename an existing git remote
+git remote rename origin devoteam
+
 ```
 
 ### Working with branches
