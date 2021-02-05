@@ -35,6 +35,9 @@ git push -u --force origin master
 git fetch remote_name
 git fetch origin
 
+# fetch && delete obsolete remote-tracking branches
+git fetch origin --prune 
+
 # check all branches of all remotes
 git branch -av
 
@@ -43,6 +46,25 @@ git checkout -b branch_name remote_name/branch_name
 git checkout -b master origin/master
 
 ```
+
+### Working with branches
+
+```
+# delete a local branch
+git branch -d branch_name
+git branch -D branch_name   # -D = -d --force
+
+# delete a remote branch
+git push remote_name -d branch_name
+
+# branch out from a branch
+git checkout -b dev master          # create a local branch called dev from local master
+git checkout -b dev origin/master   # create a local branch called dev from remote master
+git checkout dev                    # switch to dev
+
+
+```
+
 
 ### SSH key
 
