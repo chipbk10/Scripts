@@ -31,12 +31,19 @@ git push -u --force origin master
 ### Working with multiple repositories
 
 ```
+# shows all the branches on the remote, including those that are not tracked locally 
+# and even those that have not yet been fetched
+git remote show remote_name
+
 # fetch all of the remote branches
 git fetch remote_name
 git fetch origin
 
 # fetch && delete obsolete remote-tracking branches
-git fetch origin --prune 
+git fetch origin --prune
+
+# fetch and update all remotes
+git remote update --prune
 
 # check all branches of all remotes
 git branch -av
