@@ -69,6 +69,9 @@ git checkout -b dev master          # create a local branch called dev from loca
 git checkout -b dev origin/master   # create a local branch called dev from remote master
 git checkout dev                    # switch to dev
 
+# push to a remote branch with different name
+git push -u remote_name local_branch_name:remote_branch_name
+git push -u origin dev:master
 
 ```
 
