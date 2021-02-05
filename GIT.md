@@ -15,7 +15,7 @@ git commit -m "file untracking changed"
 ### Steps to clear out the history
 
 ```
-# Remove the history from 
+# remove the history from 
 rm -rf .git      
 
 # recreate the repos from the current content only
@@ -26,6 +26,22 @@ git commit -m "Initial commit"
 # push to the github remote repos ensuring you overwrite history
 git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
 git push -u --force origin master
+```
+
+### Working with multiple repositories
+
+```
+# fetch all of the remote branches
+git fetch remote_name
+git fetch origin
+
+# check all branches of all remotes
+git branch -av
+
+# checkout a specific branch of a remote
+git checkout -b branch_name remote_name/branch_name
+git checkout -b master origin/master
+
 ```
 
 ### SSH key
