@@ -78,6 +78,14 @@ git push -u origin dev:master
 
 ```
 
+### Git merge vs git rebase
+```
+git checkout master
+git merge feature                   # merge all changes from feature into master in 1 commit
+                                    # we don't care whatever changed (commits) in feature
+git rebase feature                  # merge all changes from feature into master, and preserve all commits from feature
+                                    # rewrite the history of commits, arrange them by time
+```
 
 ### SSH key
 
