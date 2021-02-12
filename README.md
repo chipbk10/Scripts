@@ -19,3 +19,18 @@ source ~/.bash_profile
 # now we can call
 code folder
 ```
+
+### Kill process
+```
+top                         # get a list of currently running process
+ps aux | grep "name"        # a: show processes, u: show users, x: show processes not attached to terminal
+ps aux | grep chrome
+
+kill pID                    # pID: process ID
+killall pName               # kill processes by name
+kill -[1|2|9|15|17|19|23]   # 1: hangup, 2: interrupt from keyboard, 9: kill signal, 
+                            # 15: terminate signal, 17, 19, 23: stop process
+kill -9 2123
+killall -9 chrome
+
+```
