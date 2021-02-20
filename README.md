@@ -34,7 +34,8 @@ kill -9 2123
 killall -9 chrome
 
 ```
-### How to change video resolution
+### How to modify video's properties (resolution, frame rate)
 ```
-ffmpeg -i input.mov -vf scale=886:1920 output.mov
+ffmpeg -i input.mov -vf scale=886:1920 output.mov     # change resolution
+ffmpeg -i input.mov -filter:v fps=30 output.mov       # change frame rate
 ```
