@@ -39,3 +39,8 @@ killall -9 chrome
 ffmpeg -i input.mov -vf scale=886:1920 output.mov     # change resolution
 ffmpeg -i input.mov -filter:v fps=30 output.mov       # change frame rate
 ```
+
+### How to record simulator's screen
+```
+xcrun simctl io booted recordVideo --code=h264 --mask=black --force output.mov
+```
