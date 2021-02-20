@@ -34,3 +34,7 @@ kill -9 2123
 killall -9 chrome
 
 ```
+### How to change video resolution
+```
+ffmpeg -i input.mov -vf scale=886:1920 output.mov
+```
