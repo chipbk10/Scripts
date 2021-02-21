@@ -36,12 +36,18 @@ killall -9 chrome
 ```
 ### How to modify video's properties (resolution, frame rate)
 ```
-ffmpeg -i input.mov -vf scale=886:1920 output.mov         # change resolution
-ffmpeg -i input.mov -filter:v fps=30 output.mov           # change frame rate
-ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png  # same works for image too
+ffmpeg -i input.mov -vf scale=886:1920 output.mov                     # change resolution
+ffmpeg -i input.mov -vf scale=886:1920,setsar=1:1 output.mov          # change resolution (better)
+ffmpeg -i input.mov -filter:v fps=30 output.mov                       # change frame rate
+ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png              # same works for image too
 ```
 
 ### How to record simulator's screen
 ```
-xcrun simctl io booted recordVideo --code=h264 --mask=black --force output.mov
+xcrun simctl io booted recordVideo --code=h264 --mask=black --force output.mov    # no sound --> Apple will reject
+
+# using iMovie to combine audio & video
+# choose File -> New App Preview. First import (CMD+I) the screen shot, 
+# and then the video you recorded. This way the exported video will be the proper resolution.
+
 ```
