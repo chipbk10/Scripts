@@ -77,6 +77,9 @@ git checkout dev                    # switch to dev
 git push -u remote_name local_branch_name:remote_branch_name
 git push -u origin dev:master
 
+# set tracking information for the local branch
+git branch --set-upstream-to=origin/master master   # point local master to remote master
+
 ```
 
 ### Git merge vs git rebase
