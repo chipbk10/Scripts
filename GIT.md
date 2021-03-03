@@ -62,10 +62,11 @@ git remote rename origin devoteam
 ```
 # delete a local branch
 git branch -d branch_name
-git branch -D branch_name   # -D = -d --force
+git branch -D branch_name           # -D = -d --force
 
 # delete a remote branch
-git push remote_name -d branch_name
+git push -d remote_name branch_name
+git push -d origin dev              # delete the branch called dev from remote origin
 
 # branch out from a branch
 git checkout -b dev master          # create a local branch called dev from local master
