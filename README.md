@@ -55,4 +55,7 @@ xcrun simctl io booted recordVideo --code=h264 --mask=black --force output.mov  
 ### How to know size of a folder
 ```
 du -sh folder
+du -sh *                                        # display sizes of all folders & files in the current folder
+du -sh * | sort -rh                             # display & sort by decreasing order
+du -sh * | sort -rh | head -20                  # display top-20 biggest sub-folders in the current folder
 ```
