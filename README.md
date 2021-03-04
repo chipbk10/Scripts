@@ -51,3 +51,8 @@ xcrun simctl io booted recordVideo --code=h264 --mask=black --force output.mov  
 # and then the video you recorded. This way the exported video will be the proper resolution.
 
 ```
+
+### How to know size of a folder
+```
+du -sh folder
+```
