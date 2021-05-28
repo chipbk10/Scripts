@@ -14,6 +14,12 @@ pod install
 pod install --repo-update                                 # to be sure you get the latest version
 pod update
 open project.xcworkspace
+
+# remove pods from project
+sudo gem install cocoapods-deintegrate cocoapods-clean
+pod deintegrate
+pod cache clean --all
+rm -rf Pod* Project.xcworkspace
 ```
 
 ### XCRUN
