@@ -2,9 +2,10 @@
 
 Other useful scripts
 
-### Merge pdf files
+### Merge & Separate pdf files
 ```
 pdfunite in_1.pdf in_2.pdf in_3.pdf out.pdf
+pdfseparate input.pdf %d.pdf
 ```
 
 ### Run Visual Studio from terminal
