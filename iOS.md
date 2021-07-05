@@ -47,8 +47,10 @@ Cartfile.resolved                                         # this file contains i
 #### Carthage directory
 - Build 		# built frameworks
 - Checkouts 	# source code
-			# Carthage maintains its own internal cache (database) of dependency repositories, 
-			# so it doesn’t have to clone the same source multiple times for different projects.
+
+#### Notes
+- Carthage maintains its own internal cache (database) of dependency repositories, 
+- so it doesn’t have to clone the same source multiple times for different projects.
 
 ````
 carthage update                                           # clone the repositories (dependencies), then build each dependency into a framework
