@@ -36,3 +36,23 @@ xcrun simctl uninstall booted /path/to/your.app           # to remove app from t
 xcrun simctl launch booted "com.app.bundleIdentifier"     # to launch the app in the booted simulator
                                                           # "com.app.bundleIdentifier" is your CFBundleIdentifier in Info.plist
 ```
+
+### Carthage
+
+touch Cartfile                                            # create Carthage file, then add dependencies
+Cartfile.resolved                                         # this file contains info about versions of the dependencies, should be stored in the repository
+
+
+#### Carthage directory
+- Build 		# built frameworks
+- Checkouts 	# source code
+			# Carthage maintains its own internal cache (database) of dependency repositories, 
+			# so it doesn’t have to clone the same source multiple times for different projects.
+
+carthage update                                           # clone the repositories (dependencies), then build each dependency into a framework
+carthage update --platform iOS
+carthage bootstrap --no-build                             # Carthage skip download the binary builds
+
+#### bootstrap vs update
+carthage bootstrap 	# checkout & build
+carthage update 		# update & re-build
