@@ -1,9 +1,16 @@
 ### Android Studio
 ```
 # open from terminal
-# add to ~/.bash_profile
+# add to ~/.bash_profile or ~/.zshenv
 export PATH=$PATH:/Applications/Android\ Studio.app/Contents/MacOS/
-source ~/.bash_profile
+export PATH=~/Library/Android/sdk/tools:$PATH
+export PATH=~/Library/Android/sdk/platform-tools:$PATH
+source ~/.bash_profile # source ~/.zshenv
+```
+
+### Adb
+```
+adb install ~/Downloads/file.apk
 ```
 
 ### BundleTool
