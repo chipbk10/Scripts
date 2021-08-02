@@ -11,6 +11,7 @@ source ~/.bash_profile # source ~/.zshenv
 ### Adb
 ```
 adb install ~/Downloads/file.apk
+adb shell input text 'HelloWorld'
 ```
 
 ### BundleTool
