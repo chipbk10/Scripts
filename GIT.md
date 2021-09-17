@@ -102,3 +102,6 @@ ssh-agent -s          # using SSH-AGENT to manage private key, and communicate w
 ssh-add ~/.ssh/id_rsa # add private key into ssh-agent
 ssh-add -l            # list all private keys in ssh-agent
 ```
+
+### Https
+- to store `git credential` we can use `keychain`. Add new `password item`, fill `username`, `password`, allow application `iterm` to access
