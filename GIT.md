@@ -28,6 +28,27 @@ git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
 git push -u --force origin master
 ```
 
+### GitConfig
+```
+# global git config
+cat ~/.gitconfig
+
+# local git config or inside a git repository folder
+cat /usr/local/etc/gitconfig
+
+# Xcode git config
+sudo vim /Applications/Xcode_13_2_1.app/Contents/Developer/usr/share/git-core/gitconfig
+
+git config --global user.email
+git config --local user.email "someone@gmail.com"
+
+# credential.helper: you will be asked for a username and password, and they will be saved in ~/.git-credentials file
+git config --global credential.helper store
+
+# credential.helper: osxkeychain
+git config --global credential.helper osxkeychain
+
+```
 ### Working with multiple repositories
 
 ```
