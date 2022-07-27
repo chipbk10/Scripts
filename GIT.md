@@ -7,6 +7,10 @@ However, because that file is already in the tracking list, so that file is not 
 In that case, you should remove the cache first then add all. 
 
 ```
+# delete all existing .DS_Store files in the repository
+find . -name .DS_Store | xargs -0 rm
+
+# clear the cache
 git rm -r --cached .
 git add .
 git commit -m "file untracking changed"
