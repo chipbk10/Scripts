@@ -60,3 +60,14 @@ du -sh *                                        # display sizes of all folders &
 du -sh * | sort -rh                             # display & sort by decreasing order
 du -sh * | sort -rh | head -20                  # display top-20 biggest sub-folders in the current folder
 ```
+
+### Turn on/off proxy
+```
+networksetup -setwebproxy wi-fi localhost 3128
+networksetup -setwebproxy wi-fi off             # not working!!!
+networksetup -setwebproxy wi-fi on              # not working!!!
+
+networksetup -setsecurewebproxy wi-fi localhost 3128
+networksetup -setsecurewebproxy wi-fi off       # not working!!!
+networksetup -setsecurewebproxy wi-fi on        # not working!!!
+```
