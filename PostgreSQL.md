@@ -1,8 +1,12 @@
 # install postgresql
+```
 brew install postgresql
+```
 
 # run
+```
 brew services start postgresql
+```
 
 # sql
 ```
