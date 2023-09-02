@@ -27,6 +27,8 @@ top                         # get a list of currently running process
 ps aux | grep "name"        # a: show processes, u: show users, x: show processes not attached to terminal
 ps aux | grep chrome
 
+sudo lsof -i tcp:8080       # show a list of processes running on port 8080
+
 kill pID                    # pID: process ID
 killall pName               # kill processes by name
 kill -[1|2|9|15|17|19|23]   # 1: hangup, 2: interrupt from keyboard, 9: kill signal, 
