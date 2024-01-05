@@ -2,6 +2,14 @@
 
 Other useful scripts
 
+### Pipeline
+
+```
+find . -name "file.txt"                 # file a file with name file.txt in the current folder
+cat $(find . -name "file.txt")          # then display on the screen
+find . -name "file.txt" | xargs cat     # or we can use a pipeline with xargs to specify a parameter
+```
+
 ### Merge & Separate pdf files
 ```
 pdfunite in_1.pdf in_2.pdf in_3.pdf out.pdf
